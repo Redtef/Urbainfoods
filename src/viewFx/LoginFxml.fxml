@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="265.0" prefWidth="351.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="viewFx.LoginController">
+   <children>
+      <Pane prefHeight="265.0" prefWidth="356.0" style="-fx-background-color: #e32929;">
+         <children>
+            <Button fx:id="connection" layoutX="139.0" layoutY="197.0" mnemonicParsing="false" onAction="#seConnecter" text="Connection" />
+            <TextField fx:id="login" layoutX="103.0" layoutY="70.0" promptText="login" />
+            <PasswordField fx:id="password" layoutX="104.0" layoutY="141.0" promptText="password" />
+            <Label layoutX="104.0" layoutY="26.0" text="Login :" />
+            <Label layoutX="104.0" layoutY="107.0" text="Password :" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

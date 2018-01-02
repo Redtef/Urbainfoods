@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="625.0" style="-fx-background-color: #b1b6a0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewFx.AcceuilController">
+    <children>
+      <Pane prefHeight="106.0" prefWidth="625.0" style="-fx-background-color: #e32929; -fx-border-radius: 12px;">
+         <children>
+              <Button fx:id="login" layoutX="541.0" layoutY="38.0" onAction="#login" style="-fx-background-color: #ff0000;" text="Login" textAlignment="CENTER" textFill="#f6f3f3">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label ellipsisString="." layoutX="45.0" layoutY="24.0" prefHeight="59.0" prefWidth="225.0" style="-fx-font: bold;" text="  UrbainFooDs" textAlignment="CENTER" textFill="#f6f3f3">
+               <font>
+                  <Font name="Arabic Typesetting" size="43.0" />
+               </font>
+            </Label>
+            <Label fx:id="client" layoutX="476.0" layoutY="10.0" prefHeight="25.0" prefWidth="130.0" text="client" textFill="#55944d">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutY="346.0" prefHeight="71.0" prefWidth="625.0" style="-fx-background-color: #e32929;" />
+      <ComboBox fx:id="comboVille" layoutX="8.0" layoutY="184.0" prefHeight="25.0" prefWidth="144.0" promptText="Ville" />
+      <ComboBox fx:id="comboCite" layoutX="169.0" layoutY="184.0" onMouseClicked="#citeCombo" prefHeight="25.0" prefWidth="144.0" promptText="Zone" />
+      <ComboBox fx:id="comboSpecialite" layoutX="327.0" layoutY="184.0" onMouseClicked="#initCat" prefHeight="25.0" prefWidth="144.0" promptText="Specialité" />
+      <Button fx:id="Lister" layoutX="486.0" layoutY="184.0" mnemonicParsing="false" onAction="#Lister" style="-fx-background-color: #ff0000;" text="Lister Les Restaurants" />
+      <Label layoutX="279.0" layoutY="329.0" text="about Us :" />
+    </children>
+</AnchorPane>
